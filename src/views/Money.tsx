@@ -12,16 +12,9 @@ const MyLayout = styled(Layout)`
 `
 function Money() {
   return (
-    <Layout>
-      <TagsSection>
-        <ol>
-          <li>衣</li>
-          <li>食</li>
-          <li>住</li>
-          <li>行</li>
-        </ol>
-        <button>新增标签</button>
-      </TagsSection>
+    <MyLayout>
+
+      <TagsSection/>
       <NotesSection>
         <label>
           <span>备注</span>
@@ -55,7 +48,7 @@ function Money() {
           <button className="dot">.</button>
         </div>
       </NumberPadSection>
-    </Layout>
+    </MyLayout>
   );
 }
 
