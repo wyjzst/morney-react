@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link,NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import React from 'react';
 import Icon from './Icon';
 
@@ -14,7 +14,6 @@ const NavWrapper = styled.nav`
     > li {
       width: 33.3333%;
       text-align: center;
-
       > a {
         display: flex;
         flex-direction: column;
