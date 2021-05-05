@@ -11,7 +11,7 @@ const MyLayout = styled(Layout)`
   flex-direction: column;
 `
 
-type Category = '-' | '+'xx
+type Category = '-' | '+'
 function Money() {
   const [selected, setSelected] = useState({
     tags: [] as string[],
