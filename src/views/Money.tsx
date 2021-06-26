@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {NoteSection} from './Money/NoteSection';
 import {CategorySection} from './Money/CategorySection';
 import {NumberPadSection} from './Money/ NumberPadSection';
-import {TagsSection} from './Money/TagsSection ';
+import {TagsSection} from './Money/TagsSection';
 
 const MyLayout = styled(Layout)`
   display:flex;
@@ -14,7 +14,7 @@ const MyLayout = styled(Layout)`
 type Category = '-' | '+'
 function Money() {
   const [selected, setSelected] = useState({
-    tags: [] as string[],
+    tagIds: [] as number[],
     note: '',
     category: '-' as Category,
     amount: 0
@@ -24,8 +24,8 @@ function Money() {
   };
   return (
     <MyLayout>
-      <TagsSection value={selected.tags}
-                   onChange={tags => onChange({tags})}/>
+      <TagsSection value={selected.tagIds}
+                   onChange={tagIds => onChange({tagIds})}/>
       <NoteSection value={selected.note}
                    onChange={note => onChange({note})}/>
       <CategorySection value={selected.category}
