@@ -20,9 +20,7 @@ const Layout: React.FC<Props> = (props) => {
   useEffect(() => {
     setTimeout(() => {
       if (!mainRef.current) {return;}
-      console.log(props.scrollTop);
       mainRef.current.scrollTop = props.scrollTop!;
-      console.log(mainRef.current.scrollTop);
     }, 0);
   }, [props.scrollTop]);
   return (
